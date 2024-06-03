@@ -1,0 +1,214 @@
+####Optimised hyperparameters for traditional models with different features.
+
+
+##############Mordred###############################Mordred###############################Mordred###############################Mordred#################
+# 6+1613
+classifiers = {
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.6, degree=4, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=11, metric='minkowski', algorithm='auto'),    
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=350,  max_features=1.0, max_samples=1000, random_state=None), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=15, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.9, beta=6, n_clusters=10, n_jobs=None),
+}
+
+
+# 27+1613
+classifiers = {
+    'KNN': 
+        KNN(contamination=0.1, method='largest', n_neighbors=16, metric='minkowski', algorithm='auto'),    
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=550,  max_features=1.0, max_samples=1000, random_state= None), 
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.5, degree=7, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=16, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1,  alpha=0.9, beta=6, n_clusters=10, n_jobs=None)
+}
+
+#205+1613
+classifiers = {
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.8, degree=7, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=150, metric='minkowski', algorithm='auto'),    
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=300,  max_features=1.0, max_samples=1000, random_state=None), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=61, contamination=0.1, novelty=True, metric='minkowski'), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.7, beta=12, n_clusters=32, n_jobs=None),
+}
+
+#6+177
+classifiers = {
+    'KNN': 
+        KNN(contamination=0.1, method='median', n_neighbors=12, metric='minkowski', algorithm='auto'),    
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=400,  max_features=1.0, max_samples=1000, random_state= None), 
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.5, degree=7, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=15, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1,  alpha=0.9, beta=8, n_clusters=12, n_jobs=None)
+}
+
+# 27+177
+classifiers = {
+    'KNN': 
+        KNN(contamination=0.1, method='largest', n_neighbors=16, metric='minkowski', algorithm='auto'),    
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=550,  max_features=1.0, max_samples=1000, random_state= None), 
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.5, degree=7, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=16, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1,  alpha=0.9, beta=6, n_clusters=10, n_jobs=None)
+}
+
+#205+177
+classifiers = {
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.8, degree=10, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=150, metric='minkowski', algorithm='auto'),    
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=300,  max_features=1.0, max_samples=1000, random_state=None), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=27, contamination=0.1, novelty=True, metric='minkowski'), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=2, n_clusters=32, n_jobs=None),
+}
+
+
+##############RDkit#############################RDkit#############################RDkit#############################RDkit###############
+#6_rdkit
+classifiers_1 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=500,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=180, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.5, degree=9, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=70, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.7, beta=12, n_clusters=28, n_jobs=None),
+}
+#27_rdkit
+classifiers_2 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=500,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='median', n_neighbors=150, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.6, degree=4, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=53, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=6, n_clusters=44, n_jobs=None),
+}
+#205_rdkit
+classifiers_3 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=600,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=210, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.8, degree=4, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=57, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=6, n_clusters=44, n_jobs=None),
+}
+
+##############ECFPs#############################ECFPs##############################ECFPs##############################ECFPs#t###############
+#6_ecfp_2048
+classifiers_1 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=250,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=250, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.5, degree=7, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=70, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=4, n_clusters=12, n_jobs=None),
+}
+#27_ecfp_2048
+classifiers_2 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=450,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='mean', n_neighbors=210, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.1, degree=10, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=84, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=14, n_clusters=32, n_jobs=None),
+}
+#205_ecfp_2048
+classifiers = {
+    'Isolation Forest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=300,  max_features=1.0, max_samples=1000, random_state=None),  
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=2, n_clusters=32, n_jobs=None),
+    'One class SVM (OCSVM)': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.8, degree=10, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'K Nearest Neighbors (KNN)': 
+        KNN(contamination=0.1, method='mean', n_neighbors=150, metric='minkowski', algorithm='auto'),    
+    'Local Outlier Factor (LOF)':
+        LOF(algorithm='auto', n_neighbors=27, contamination=0.1, novelty=True, metric='minkowski'), 
+}
+
+
+#################################################################################################
+#6_ecfp_256
+classifiers_1 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=300,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='median', n_neighbors=80, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.6, degree=4, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=84, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=6, n_clusters=44, n_jobs=None),
+}
+#27_ecfp_256
+classifiers_2 = {
+    'IForest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=450,  max_features=1.0, max_samples=1000, random_state=None), 
+    'KNN': 
+        KNN(contamination=0.1, method='median', n_neighbors=230, metric='minkowski', algorithm='auto'),    
+    'OCSVM': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.6, degree=4, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'LOF':
+        LOF(algorithm='auto', n_neighbors=70, contamination=0.1, novelty=True), 
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.8, beta=10, n_clusters=32, n_jobs=None),
+}
+#205_ecfp_256
+classifiers = {
+
+     'Isolation Forest': 
+        IForest(behaviour="new", bootstrap=False, contamination=0.1, n_estimators=300,  max_features=1.0, max_samples=1000, random_state=None),  
+    'CBLOF':    
+        CBLOF(contamination=0.1, alpha=0.6, beta=2, n_clusters=32, n_jobs=None),
+    'One class SVM (OCSVM)': 
+        OCSVM(contamination=0.1, kernel='rbf' , nu= 0.8, degree=10, gamma='auto', shrinking=True, tol=0.001, cache_size=200), 
+    'K Nearest Neighbors (KNN)': 
+        KNN(contamination=0.1, method='mean', n_neighbors=150, metric='minkowski', algorithm='auto'),    
+    'Local Outlier Factor (LOF)':
+        LOF(algorithm='auto', n_neighbors=27, contamination=0.1, novelty=True, metric='minkowski'), 
+}
