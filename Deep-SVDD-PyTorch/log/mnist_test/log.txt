@@ -1,0 +1,31 @@
+2022-05-29 23:09:06,320 - root - INFO - Log file is ../log/mnist_test/log.txt.
+2022-05-29 23:09:06,320 - root - INFO - Data path is ../data.
+2022-05-29 23:09:06,322 - root - INFO - Export path is ../log/mnist_test.
+2022-05-29 23:09:06,328 - root - INFO - Dataset: mnist
+2022-05-29 23:09:06,329 - root - INFO - Normal class: 3
+2022-05-29 23:09:06,330 - root - INFO - Network: mnist_LeNet
+2022-05-29 23:09:06,330 - root - INFO - Deep SVDD objective: one-class
+2022-05-29 23:09:06,331 - root - INFO - Nu-paramerter: 0.10
+2022-05-29 23:09:06,332 - root - INFO - Computation device: cpu
+2022-05-29 23:09:06,332 - root - INFO - Number of dataloader workers: 0
+2022-05-29 23:09:11,418 - root - INFO - Pretraining: True
+2022-05-29 23:09:11,418 - root - INFO - Pretraining optimizer: adam
+2022-05-29 23:09:11,419 - root - INFO - Pretraining learning rate: 0.0001
+2022-05-29 23:09:11,420 - root - INFO - Pretraining epochs: 150
+2022-05-29 23:09:11,421 - root - INFO - Pretraining learning rate scheduler milestones: (50,)
+2022-05-29 23:09:11,424 - root - INFO - Pretraining batch size: 200
+2022-05-29 23:09:11,426 - root - INFO - Pretraining weight decay: 0.0005
+2022-05-29 23:09:11,432 - root - INFO - Starting pretraining...
+2022-05-29 23:09:19,279 - root - INFO -   Epoch 1/150	 Time: 7.845	 Loss: 58.14840834
+2022-05-29 23:09:26,850 - root - INFO -   Epoch 2/150	 Time: 7.571	 Loss: 33.39634975
+2022-05-29 23:09:34,207 - root - INFO -   Epoch 3/150	 Time: 7.356	 Loss: 23.13421945
+2022-05-29 23:09:41,554 - root - INFO -   Epoch 4/150	 Time: 7.346	 Loss: 17.38005583
+2022-05-29 23:09:48,788 - root - INFO -   Epoch 5/150	 Time: 7.233	 Loss: 13.91066299
+2022-05-29 23:09:55,981 - root - INFO -   Epoch 6/150	 Time: 7.192	 Loss: 11.71977055
+2022-05-29 23:10:03,251 - root - INFO -   Epoch 7/150	 Time: 7.270	 Loss: 10.25698803
+2022-05-29 23:10:10,536 - root - INFO -   Epoch 8/150	 Time: 7.286	 Loss: 9.23042500
+2022-05-29 23:10:17,822 - root - INFO -   Epoch 9/150	 Time: 7.285	 Loss: 8.47551518
+2022-05-29 23:10:24,986 - root - INFO -   Epoch 10/150	 Time: 7.164	 Loss: 7.89567760
+2022-05-29 23:10:32,254 - root - INFO -   Epoch 11/150	 Time: 7.267	 Loss: 7.44130848
+2022-05-29 23:10:39,454 - root - INFO -   Epoch 12/150	 Time: 7.199	 Loss: 7.07095375
+2022-05-29 23:10:46,786 - root - INFO -   Epoch 13/150	 Time: 7.331	 Loss: 6.76140348
