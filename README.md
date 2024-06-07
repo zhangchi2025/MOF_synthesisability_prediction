@@ -19,6 +19,6 @@ This article is pre-printed on ChemRxiv on 22 May 2024.<br/>
    author = {Chi Zhang, Dmytro Antypov, Matthew J. Rosseinsky, and Matthew S. Dyer},<br/>
    title = {Accelerating Metal-Organic Framework Discovery via Synthesisability Prediction: The MFD Evaluation Method for One-Class Classification Models},<br/>
    doi = {10.26434/chemrxiv-2024-tlmp4},<br/>
-   url = {https://chemrxiv.org/engage/chemrxiv/article-details/664c7a3c418a5379b0ded343},<br/>
+   url = {https://chemrxiv.org/engage/chemrxiv/article-details/664c7a3c418a5379b0ded343 }, <br/>
 }
 
