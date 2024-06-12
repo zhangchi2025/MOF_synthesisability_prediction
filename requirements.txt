@@ -4,7 +4,7 @@ joblib
 mordred==1.2.0
 networkx==2.1
 numpy
-pandas
+pandas==2.0.0
 Pillow
 plotly
 pyod
