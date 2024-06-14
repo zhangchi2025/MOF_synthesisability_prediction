@@ -1,4 +1,4 @@
-The Jupyter Notebook `models_training_process.ipynb` hereafter presents the training procedure (corresponding to Figure 1, step 4) of one-class classification models. To avoid repetition, this notebook shows only seven OCC models (IForest, kNN, OCSVM, LOF, CBLOF, LUNAR, and DeepSVDD) trained by their best-performing feature sets. 
+The Jupyter Notebook `models_training_process.ipynb` hereafter presents the training procedure (corresponding to Figure 1, step 4) of one-class classification models. To avoid repetition, this notebook shows only seven OCC models (IForest, kNN, OCSVM, LOF, CBLOF, LUNAR, and DeepSVDD) trained using their best-performing feature sets. 
 
 This notebook requires the `model_architecture` folder to train the DeepSVDD and the LUNAR models, as well as the following input files from the `dataset_generation_and_featurization` folder:
 
