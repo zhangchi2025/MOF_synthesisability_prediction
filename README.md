@@ -11,6 +11,8 @@ This repository contains five folders with the following contents:<br/>
 
 If you want to use the MFD method to evaluate your models, please input the prediction results for your ground_truth dataset and the query dataset into `MFD calculation.ipynb`. This notebook can help you plot score distributions, positive fraction distributions, and generate the MFD and OT values. Further instructions can be found within the notebook.<br/>
 
+If you want to use the trained best-performing DeepSVDD model to predict the synthesisability of your input [metal, linker] combination, please use `synthesisability_prediction.ipynb`. Enter the metal as an element symbol and the organic linker as a SMILES string. The `deep_scaler.joblib` saves the DeepSVDD model scaler used to normalise the prediction score for the input.<br/>
+
 ## Clone and Run
 **This repository includes large files uploaded using LFS(Git Large File Storage). Please also use LFS to clone the repository to your local machine to avoid errors when running the code:**
 1. Install Git LFS:
