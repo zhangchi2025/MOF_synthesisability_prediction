@@ -4,9 +4,9 @@
 This repository contains five folders with the following contents:<br/>
 
 - `dataset_generation_and_featurization`: the generation of the ground-truth and query dataset, along with the featurization process.<br/>
-   ```
+   <br/>
    The 1M1L3D dataset used to as the fround-truth dataset after removing duplicates is obtained from Pétuya et al. **[DOI: 10.1002/anie.202114573]**. This dataset is sourced from decomposing reported experimental three-dimensional MOF structures made of a single metal and a single linker in **CSD (Data Update 3-2019)** into their constituent components, are openly available in http://datacat.liverpool.ac.uk/1494.
-   ```
+   <br/>
 - `one_class_classification_models`: the training procedure of one-class classification models. To avoid repetition, this notebook shows only seven OCC models (IForest, kNN, OCSVM, LOF, CBLOF, LUNAR, and DeepSVDD) trained using their best-performing feature sets.
 - `model_architecture`: the source code for the DeepSVDD and the LUNAR model.
 - `best_vs_poor_model`: the score and the positive fraction distributions for the best-performing model (the DeepSVDD model trained by 205-dimensional metal features and 2048-dimensional linker features from ECFPs, with an MFD value of 0.59) and the poor model used for comparison (the IForest model trained by 6 elemental metal features and 1613-dimensional linker features from Mordred, with an MFD value of 0.08). The two notebooks also show the creation of the positive validation dataset and model validation procedure.
