@@ -1,7 +1,7 @@
 # The MFD (Maximum Fractional Difference) method and its implementation on MOF synthesisability prediction
 **The repository for the publication "Accelerating Metal-Organic Framework Discovery via Synthesisability Prediction: The MFD Evaluation Method for One-Class Classification Models"**
 
-This repository contains five folders with the following contents:<br/>
+This repository contains six folders with the following contents:<br/>
 
 - `dataset_generation_and_featurization`: the generation of the ground-truth and query dataset, along with the featurization process.<br/>
    <br/>
